@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+.unchanged_text {
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid grey;
+}
+
+#sidebar {
+    width: 13%;
+    background-color: rgb(247, 207, 214);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+#body {
+    width: 87%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+}
+
+#body .top {
+    flex: 1;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* 左上 */
+#body .top .basic_info {
+    flex: 1;
+    border: 1px solid lightcoral;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+
+#body .top .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    margin-right: 60px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#body .top .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 70px;
+    font-weight: bold;
+}
+
+#body .top .info_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100px;
+}
+
+/* 右上 */
+#body .top .something_else {
+    flex: 3;
+    border: 1px solid lightcoral;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    height: 80%;
+}
+
+/* 下 */
+#body .bottom {
+    flex: 4;
+    display: flex;
+}
+
+#body .bottom .section {
+    flex: 1;
+    border: 1px solid lightcoral;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+h2 {
+    border-bottom: 5px solid black;
+}
+
+/* 左下 */
+
+#body .week_info {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    border-radius: 10px;
+    margin: 20px;
+    padding-left: 20px;
+    font-size: 22px;
+}
+
+#body .fake_buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px;
+    font-size: 22px;
+    border: 2px solid blue;
+}
