@@ -1,0 +1,37 @@
+.avatar {
+  border: 5px solid white;
+  box-sizing: border-box;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 50px;
+  background-color: lightpink;
+}
+.avatar__image {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.avatar::before, .avatar::after {
+  border: 5px solid transparent;
+  border-radius: 50%;
+  border-top: 5px solid #00BCD4;
+  content: "";
+  display: block;
+  height: calc(100% + 10px);
+  left: 50%;
+  width: calc(100% + 10px);
+  position: absolute;
+}
+.avatar::before {
+  top: -10px;
+  transform: translateX(-50%);
+}
+.avatar::after {
+  bottom: -10px;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+/*# sourceMappingURL=avatar.css.map */

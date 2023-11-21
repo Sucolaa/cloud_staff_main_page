@@ -6,6 +6,7 @@ body {
 
 .unchanged_text {
     font-weight: bold;
+    font-size: 14px;
 }
 
 hr {
@@ -99,6 +100,24 @@ hr {
     padding-right: 20px;
     margin: 10px;
     border-radius: 20px;
+    max-height: 1000px;
+    overflow-y: auto;
+}
+
+#body .bottom .section::-webkit-scrollbar {
+    width: 5px;
+}
+
+#body .bottom .section::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#body .bottom .section::-webkit-scrollbar-thumb {
+    background: lightpink;
+}
+
+#body .bottom .section::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 h2 {
@@ -113,9 +132,10 @@ h2 {
     flex-direction: row;
     justify-content: start;
     border-radius: 10px;
-    margin: 20px;
     padding-left: 20px;
-    font-size: 22px;
+    font-size: 16px;
+    background-color: lightpink;
+    border: 1px solid grey;
 }
 
 #body .fake_buttons {
@@ -130,4 +150,47 @@ h2 {
     padding: 10px;
     font-size: 22px;
     border: 2px solid blue;
+}
+
+#body .brand_sit {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: lightpink;
+    height: 150px;
+    align-items: center;
+}
+
+#body .brand_logo {
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 50px;
+    background-color: lightgrey;
+    margin-left: 10px;
+}
+
+#body .brand_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    height: 100%;
+    width: 400px;
+    text-align: left;
+}
+
+.number_exm {
+    display: flex;
+    flex-direction: row;
+}
+
+.number_exm p {
+    margin-right: 30px;
 }
